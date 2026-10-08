@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Fahim Tahmid | Academic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .nav-link {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #4f46e5; /* Indigo 600 */
+        }
+        .section-header {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 40px;
+            background-color: #4f46e5;
+            border-radius: 2px;
+        }
+        .font-creative {
+            font-family: 'Caveat', cursive;
+            font-size: 1.4rem;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-display font-bold text-xl text-slate-900 tracking-tight">Kazi Fahim Tahmid</span>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:space-x-8 md:items-center">
+                    <a href="#about" class="nav-link text-sm font-medium text-slate-600">About</a>
+                    <a href="#research" class="nav-link text-sm font-medium text-slate-600">Research</a>
+                    <a href="#publications" class="nav-link text-sm font-medium text-slate-600">Publications</a>
+                    <a href="#teaching" class="nav-link text-sm font-medium text-slate-600">Teaching</a>
+                    <a href="#artifacts" class="nav-link text-sm font-medium text-slate-600">Artifacts</a>
+                    <a href="#blog" class="nav-link text-sm font-medium text-slate-600">Blog</a>
+                    <a href="#contact" class="nav-link text-sm font-medium text-slate-600">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="text-slate-500 hover:text-slate-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-slate-100 shadow-lg absolute w-full" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#about" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">About</a>
+                <a href="#research" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Research</a>
+                <a href="#publications" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Publications</a>
+                <a href="#teaching" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Teaching</a>
+                <a href="#artifacts" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Artifacts</a>
+                <a href="#blog" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Blog</a>
+                <a href="#contact" class="block pl-3 pr-4 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- About Section -->
+        <section id="about" class="flex flex-col md:flex-row items-start gap-10 mb-20 pt-8">
+            <div class="w-48 h-48 flex-shrink-0 rounded-full overflow-hidden border-4 border-white shadow-xl ring-1 ring-slate-200 mx-auto md:mx-0 bg-white">
+                <!-- Personal photo with Drive embed URL and a fallback -->
+                <img src="https://drive.google.com/uc?export=view&id=1z99etK-LFrn9kzJTem-axzappOjb6pOR" alt="Kazi Fahim Tahmid" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/e2e8f0/475569?text=KFT'">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-3 tracking-tight">Kazi Fahim Tahmid</h1>
+                <p class="text-lg font-medium text-indigo-600 mb-4">Lecturer of Computer Science & Engineering</p>
+                
+                <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed mb-6">
+                    <p class="mb-3">
+                        I am a Lecturer in the Department of Computer Science and Engineering at <strong>United International University (UIU)</strong> and previously at the <strong>Military Institute of Science & Technology (MIST)</strong>. I am currently a prospective Research-based Master's student with an intention to pursue a PhD and Postdoctoral research.
+                    </p>
+                    <p>
+                        My research fundamentally explores the intersection of <strong>Model Compression, LLM Reasoning, and ClinicalAI</strong>. I am passionate about developing end-device deployable, privacy-preserving Small Language Models (SLMs) for high-stakes environments like surgical automation and diagnostics. My long-term vision is to bridge human-AI collaboration to facilitate precise, real-time medical reasoning at the edge.
+                    </p>
+                </div>
+                
+                <div class="mb-6 flex items-center justify-center md:justify-start">
+                    <a href="mailto:fahimtahmid@cse.uiu.ac.bd" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 transition-colors group bg-indigo-50/50 px-4 py-2 rounded-lg border border-indigo-100">
+                        <svg class="w-5 h-5 mr-3 text-indigo-400 group-hover:text-indigo-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span class="font-creative font-semibold">fahimtahmid at cse dot uiu dot ac dot bd</span>
+                    </a>
+                </div>
+                
+                <div class="flex flex-wrap items-center gap-4 justify-center md:justify-start">
+                    <!-- CV Button -->
+                    <a href="#" class="inline-flex items-center px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium rounded-lg transition-colors shadow-sm">
+                        <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Curriculum Vitae
+                    </a>
+                    
+                    <!-- GitHub -->
+                    <a href="https://github.com/IceColdMartini" target="_blank" title="GitHub Profile" class="inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-slate-50 text-slate-700 hover:text-indigo-600 border border-slate-200 rounded-lg transition-colors shadow-sm">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/IceColdMartini" target="_blank" title="LinkedIn Profile" class="inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-slate-50 text-slate-700 hover:text-indigo-600 border border-slate-200 rounded-lg transition-colors shadow-sm">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+
+                    <!-- Google Scholar -->
+                    <a href="#" target="_blank" title="Google Scholar" class="inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-slate-50 text-slate-700 hover:text-indigo-600 border border-slate-200 rounded-lg transition-colors shadow-sm">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.911V21h3.316v-5.215L12 19l12-9.5L12 0z"/></svg>
+                    </a>
+
+                    <!-- OpenReview -->
+                    <a href="https://openreview.net/profile?id=~Kazi_Fahim_Tahmid1" target="_blank" title="OpenReview Profile" class="inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-slate-50 text-slate-700 hover:text-indigo-600 border border-slate-200 rounded-lg transition-colors shadow-sm font-display font-bold text-sm tracking-tighter">
+                        OR
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="mb-20 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Research Focus</h2>
+            <div class="mb-8 p-6 bg-indigo-50/50 border border-indigo-100 rounded-xl">
+                <h3 class="text-lg font-semibold text-indigo-900 mb-3">Current Questions Driving My Work:</h3>
+                <ul class="space-y-2 text-slate-700 list-disc list-outside ml-5">
+                    <li>Can we achieve pure multimodality for Small Language Models (SLMs)? If yes, how can we develop adaptive architectures preserving diagnostic-critical features?</li>
+                    <li>How can we articulate a more optimized data-efficient flow to train context-rich student Small-VLMs from proprietary LLMs/VLMs?</li>
+                    <li>How can we ensure end-device deployable, privacy-preserving SLM development (e.g., via Differential Privacy) in ClinicalAI settings for edge-computing?</li>
+                </ul>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">B-GFAN: Epilepsy Detection</h3>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Developed the Bayesian-Graph Fourier Analysis Network, a lightweight uncertainty-aware architecture utilizing multi-scale spectral filtering and Laplacian eigendecomposition.
+                    </p>
+                    <div class="flex gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2 py-1 rounded">Model Compression (7x)</span>
+                        <span class="bg-slate-100 px-2 py-1 rounded">Uncertainty Quantification</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">REPLAN-SLM</h3>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Designed an RL-Enhanced Small Language Model explicitly engineered for efficient reasoning, tool orchestration, and DAG-Based task execution for edge deployments.
+                    </p>
+                    <div class="flex gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2 py-1 rounded">Reinforcement Learning</span>
+                        <span class="bg-slate-100 px-2 py-1 rounded">Agentic AI</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">Quantization & Distillation</h3>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Working on Activation-Aware Gradient-Based Quantization with Distillation at MIST, optimizing activation quantization via gradient flow analysis to reduce error margins.
+                    </p>
+                    <div class="flex gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2 py-1 rounded">Knowledge Distillation</span>
+                        <span class="bg-slate-100 px-2 py-1 rounded">Low-Rank</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">Vision-RAG (Hyperbolic Domain)</h3>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Formulated Vision-RAG using Poincaré disk models to capture hierarchy more effectively in varying radial distances from the sphere's center (Collaboration with Intelsense.AI).
+                    </p>
+                    <div class="flex gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2 py-1 rounded">RAG Pipelines</span>
+                        <span class="bg-slate-100 px-2 py-1 rounded">Multimodal AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="mb-20 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Manuscripts in Preparation</h2>
+            
+            <div class="space-y-6">
+                <!-- Manuscript 1 -->
+                <a href="#" target="_blank" class="group relative flex gap-5 items-start bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mt-1 flex-shrink-0 w-12 h-12 bg-slate-50 flex items-center justify-center rounded-lg text-xs font-bold text-slate-500 border border-slate-200 group-hover:bg-indigo-50 group-hover:text-indigo-600 group-hover:border-indigo-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900 leading-tight group-hover:text-indigo-600 transition-colors">Bayesian-Graph Fourier Analysis Network: Lightweight Model for Epilepsy Detection and Comparison with Attention-Enhanced ConvNeXt-BiLSTM</h4>
+                        <p class="text-sm text-slate-600 mt-1"><strong>Kazi Fahim Tahmid</strong>, Sk. Imran Hossain.</p>
+                        <p class="text-sm font-medium text-indigo-600 mt-1">Extending for IEEE Transaction Submission</p>
+                        <p class="text-sm text-slate-500 mt-2 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
+                            A novel alternative to Graph Neural Networks for hierarchical and periodicity modeling tasks that generalizes better than Graph Convolutional Networks for signal data with significantly fewer parameters (4.2M). Features exceptional efficiency and well-calibrated uncertainty quantification (ECE = 3.1%).
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Manuscript 2 -->
+                <a href="#" target="_blank" class="group relative flex gap-5 items-start bg-white p-5 rounded-xl border border-slate-100 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mt-1 flex-shrink-0 w-12 h-12 bg-slate-50 flex items-center justify-center rounded-lg text-xs font-bold text-slate-500 border border-slate-200 group-hover:bg-indigo-50 group-hover:text-indigo-600 group-hover:border-indigo-200 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-900 leading-tight group-hover:text-indigo-600 transition-colors">Position: From Visual Plausibility to Use-Bound Validity Governing Synthetic Data in Medical AI</h4>
+                        <p class="text-sm font-medium text-indigo-600 mt-1">Working on Rebuttal for ICML 2027 Submission</p>
+                        <p class="text-sm text-slate-500 mt-2">
+                            *Originally submitted to NeurIPS 2026. Investigating the parameters of synthetic data validity within ClinicalAI pipelines and evaluating boundary conditions for medical reliability.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="teaching" class="mb-20 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Teaching & Mentorship</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-800 flex items-center">
+                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                        United International University
+                    </h3>
+                    <p class="text-sm font-medium text-slate-500 mb-3">Lecturer (July 2026 - Present)</p>
+                    <ul class="space-y-3">
+                        <li class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-semibold text-slate-900">Artificial Intelligence (CSE 3811/3812)</h4>
+                            <p class="text-sm text-slate-600 mt-1">Theory and Laboratory instruction on fundamental AI concepts.</p>
+                        </li>
+                        <li class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                            <h4 class="font-semibold text-slate-900">Machine Learning (CSE 4889)</h4>
+                            <h4 class="font-semibold text-slate-900 border-t border-slate-100 pt-2 mt-2">Data Mining (CSE 4891)</h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-800 flex items-center">
+                        <span class="w-2 h-2 bg-slate-400 rounded-full mr-2"></span>
+                        Military Institute of Science & Technology
+                    </h3>
+                    <p class="text-sm font-medium text-slate-500 mb-3">Lecturer (Nov 2025 - June 2026)</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside">
+                        <li><strong>Data Structures and Algorithms II:</strong> Advanced Graph algorithms, DP, Greedy techniques.</li>
+                        <li><strong>Pattern Recognition:</strong> Classification, Regression, Clustering, Decision trees.</li>
+                        <li><strong>Digital System Design:</strong> Register-Transfer Logic, Control Logic, SAP architecture.</li>
+                        <li><strong>Software Development Project-I:</strong> SDLC, UI/UX, Full-stack dev.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-6 rounded-xl shadow-md">
+                <h3 class="text-lg font-semibold mb-3 text-indigo-300">Mentorship & Leadership (K-MINDS)</h3>
+                <p class="text-sm text-slate-300 mb-4">
+                    As Founding Senior Instructor at KUET Machine Intelligence and Deep Learning Society (K-MINDS), I mentored undergraduate students on CoreML and RL for thesis advancements, and organized labs on Model Compression (LoRA, Quantization, KD).
+                </p>
+                <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                    <p class="text-sm text-slate-200">
+                        <strong>Student Advising:</strong> Actively advised 11 undergraduate juniors regarding academic and financial aspects. Initiated 5 focus group sessions across disciplines to discuss and address mental health challenges.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="artifacts" class="mb-20 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Artifacts & Capabilities</h2>
+            
+            <div class="mb-10">
+                <h3 class="text-xl font-semibold mb-6 text-slate-800 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    Technical Proficiency
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <span class="block text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">Compression</span>
+                        <p class="text-sm text-slate-700">Quantization (INT8/FP16), Pruning (Structured/Unstructured), Knowledge Distillation, Low-Rank Factorization, Model Profiling</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <span class="block text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">Python & Frameworks</span>
+                        <p class="text-sm text-slate-700">PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, NumPy, Pandas</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <span class="block text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">Multimodal AI & Alignment</span>
+                        <p class="text-sm text-slate-700">Vision-Language Models, Cross-Modal Fusion, Multi-Modal Transformers, SFT, DPO, Safety-Preserving Compression</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <span class="block text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">Healthcare AI & MLOps</span>
+                        <p class="text-sm text-slate-700">Medical Data Preprocessing, HIPAA-Compliant Systems, Docker, K8s, Model Versioning, CI/CD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-6 text-slate-800 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    Selected Academic Projects
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="group border border-slate-200 rounded-xl overflow-hidden hover:border-indigo-300 transition-colors bg-white">
+                        <div class="bg-slate-50 border-b border-slate-100 p-4 flex justify-between items-center">
+                            <h4 class="font-bold text-slate-900">Castle Black</h4>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-200 text-slate-700 rounded-md">OpenGL / C++</span>
+                        </div>
+                        <div class="p-4">
+                            <ul class="text-sm text-slate-600 list-disc list-outside ml-4 space-y-1">
+                                <li>Created a 3D medieval castle featuring procedural generation.</li>
+                                <li>Implemented Bezier curves, fractal trees, and dynamic lighting.</li>
+                                <li>Utilized custom shader programming for real-time rendering.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="group border border-slate-200 rounded-xl overflow-hidden hover:border-indigo-300 transition-colors bg-white">
+                        <div class="bg-slate-50 border-b border-slate-100 p-4 flex justify-between items-center">
+                            <h4 class="font-bold text-slate-900">LangBridge</h4>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-200 text-slate-700 rounded-md">FLEX / BISON / C++</span>
+                        </div>
+                        <div class="p-4">
+                            <ul class="text-sm text-slate-600 list-disc list-outside ml-4 space-y-1">
+                                <li>Designed a custom programming language from the ground up.</li>
+                                <li>Constructed full lexical, syntax, and semantic analysis pipelines.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group border border-slate-200 rounded-xl overflow-hidden hover:border-indigo-300 transition-colors bg-white">
+                        <div class="bg-slate-50 border-b border-slate-100 p-4 flex justify-between items-center">
+                            <h4 class="font-bold text-slate-900">Inpainter Pro</h4>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-200 text-slate-700 rounded-md">Python / OpenCV</span>
+                        </div>
+                        <div class="p-4">
+                            <ul class="text-sm text-slate-600 list-disc list-outside ml-4 space-y-1">
+                                <li>Implemented an optimized Telea method for structure and texture reconstruction.</li>
+                                <li>Targeted high-fidelity restoration of missing or damaged image regions.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="group border border-slate-200 rounded-xl overflow-hidden hover:border-indigo-300 transition-colors bg-white">
+                        <div class="bg-slate-50 border-b border-slate-100 p-4 flex justify-between items-center">
+                            <h4 class="font-bold text-slate-900">CoinScribe</h4>
+                            <span class="text-xs font-semibold px-2 py-1 bg-slate-200 text-slate-700 rounded-md">Swift / iOS</span>
+                        </div>
+                        <div class="p-4">
+                            <ul class="text-sm text-slate-600 list-disc list-outside ml-4 space-y-1">
+                                <li>Developed a comprehensive crypto wallet tracking application.</li>
+                                <li>Integrated real-time currency exchange charts with historical data forecasting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="mb-20 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Writings & Insights</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-center bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="flex-1">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">My Medium Blog</h3>
+                    <p class="text-slate-600 mb-4">
+                        I occasionally write about machine learning, model compression insights, my journey in academia, and the philosophy behind aligning AI with clinical reliability. Read my latest thoughts and deep dives into CoreML topics.
+                    </p>
+                    <a href="#" target="_blank" class="inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800 group">
+                        Visit my Medium Profile
+                        <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                <div class="w-full md:w-1/3 bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center justify-center min-h-[120px]">
+                    <span class="text-slate-400 font-medium text-sm flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                        Latest articles coming soon
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16 pt-8">
+            <h2 class="text-3xl font-bold text-slate-900 section-header">Get in Touch</h2>
+            <div class="bg-indigo-900 text-white p-8 rounded-2xl flex flex-col md:flex-row gap-8 shadow-lg relative overflow-hidden">
+                <!-- Decorative background shape -->
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-indigo-800 opacity-50 blur-2xl"></div>
+                
+                <div class="flex-1 relative z-10">
+                    <h3 class="font-semibold text-xl mb-4">Academic & Professional Inquiries</h3>
+                    <p class="text-indigo-200 mb-6 max-w-md">
+                        I am currently seeking opportunities as a Research-based Master's / PhD student. Feel free to reach out for research discussions or potential collaborations.
+                    </p>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-indigo-100">
+                            <svg class="w-5 h-5 mr-3 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:kazifahimtahmid@gmail.com" class="hover:text-white transition-colors">kazifahimtahmid@gmail.com</a>
+                        </p>
+                        <p class="flex items-center text-indigo-100">
+                            <svg class="w-5 h-5 mr-3 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            United International University<br>United City, Dhaka 1212, Bangladesh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center mt-12">
+        <div class="max-w-5xl mx-auto px-4">
+            <p class="text-sm font-medium text-slate-500">&copy; <script>document.write(new Date().getFullYear())</script> Kazi Fahim Tahmid. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
